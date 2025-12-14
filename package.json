@@ -1,0 +1,33 @@
+{
+  "name": "sdss-geospatial-visualization",
+  "version": "1.0.0",
+  "description": "Full-stack Geospatial Visualization Application for SDSS Assignment 3",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd client && npm install",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [
+    "geospatial",
+    "visualization",
+    "kepler.gl",
+    "cesium",
+    "d3js",
+    "sdss"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.2"
+  }
+}
